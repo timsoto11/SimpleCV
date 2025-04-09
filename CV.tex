@@ -72,34 +72,90 @@ breaklinks}
 \end{tabular}
 
 \begin{Body}
-
+    \Entry
     %%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% Objective %%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
     \Section
     {Summary}
     {Summary}
     {PDF:Summary}
 
+
+
     Embedded systems engineer with a wide skill-set including experience in device drivers, network security, and computer vision. Experienced with real-time mechanisms, various inter-process communication methods, and synchronization across multiple cores. Proven experience using computer science fundamentals such as data structures, object oriented design, algorithms, and complexity analysis. Currently an Engineer in Training (EIT), I am planning to take the Professional Engineering exam in the fall of 2021.
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%
-    %% Work Experience %%
-    %%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \Entry
+    % \href{http://www.tamu.edu}
+    % {\textbf{Texas A\&M University}},
+    % College Station, Texas
+
+    % B.S. in
+    % \href{https://engineering.tamu.edu/cse/index.html}
+    % {Computer Engineering}
+    % \hfill
+    % \DatestampYMD{2017}{08}{15}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Professional Experience %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \Section
-    {Work Experience}
-    {Work Experience}
-    {PDF:WorkExperience}
+    {Professional Experience}
+    {Professional Experience}
+    {PDF:ProfessionalExperience}
 
-    {\textbf{HP Inc.}}
-    - Spring, Texas
 
-        {\textit{Software Engineer}}
-    \hfill
-    \DatestampYMD{2021}{03}{15} --
-    \DatestampYMD{2022}{06}{01}
+
+    % \hspace*{1mm} %1mm vertical space
+
+    % \vspace*{1mm} %1mm vertical space
+
+    \SubSection
+    {Mesa Engineering}
+    {Houston, Texas}
+    {Senior Embedded Software Engineer}
+    {\DatestampYMD{2022}{06}{01} -- Present}
+
+    \begin{Detail}
+        \BulletItem
+        Hands-on experience with computer vision and camera pipelines, providing an understanding of video encoding standards (e.g., H.265). This includes experience with object detection using Nvidia's Deepstream SDK, GStreamer, and YOLOv8 datasets.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Developed several CUDA applications to accelerate the processing of images.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Written several data parsers to support communication with I\textsuperscript{2}C, CAN, RS422/485, and ethernet connected devices.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Aided in the bring up of custom hardware that included carrier boards for Intel and Nvidia devices. In doing so I gained experience in Altium Designer, using oscilloscopes, logic analyzers, function generators, and DMMs.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Customized and maintained Buildroot-based Linux distributions for embedded platforms, streamlining system build, kernel configuration, and root filesystem generation for various hardware targets.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Used various debuggers including GDB to quickly identify and fix bugs. Leveraged Valgrind to detect memory leaks and performance bottlenecks in C/C++ applications.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Experience with the GNU tool-chain. Built a cross compiling environment to enable the development across multiple devices.
+        \vspace{1mm} %1mm vertical space
+        \BulletItem
+        Utilized Docker to containerize embedded development environments, enabling consistent toolchains, faster onboarding for new developers, and reproducible builds across CI/CD pipelines.
+        \vspace{1mm} %1mm vertical space
+    \end{Detail}
+
+    \vspace{3mm} %1mm vertical space
+
+    \SubSection
+    {HP Inc.}
+    {Spring, Texas}
+    {Software Engineer}
+    {\DatestampYMD{2021}{03}{15} -- \DatestampYMD{2022}{05}{30}}
 
     \begin{Detail}
         \BulletItem
@@ -114,17 +170,13 @@ breaklinks}
     \end{Detail}
     \vspace{3mm} %1mm vertical space
 
-    {\textbf{Mesa Engineering}}
-    - Houston, Texas
-        {\textit{Senior Embedded Software Engineer}}
-    \hfill
-    \DatestampYMD{2017}{05}{15} --
-    \DatestampYMD{2021}{03}{15}
+    \SubSection
+    {Mesa Engineering}
+    {Houston, Texas}
+    {Embedded Software Engineer}
+    {\DatestampYMD{2017}{05}{15} -- \DatestampYMD{2021}{03}{15}}
 
     \begin{Detail}
-        \BulletItem
-        Hands-on experience with computer vision and camera pipelines, providing an understanding of video encoding standards (e.g., H.265). This includes experience with object detection using Nvidia's Deepstream SDK, GStreamer, and YOLOv8 datasets.
-        \vspace{1mm} %1mm vertical space
         \BulletItem
         Sole writer of an API to interface with IoT devices. This API is responsible for receiving data from devices and organize data into a SQL database. Using a LAMP (Linux, Apache, MySQL, Python) software stack, was able to comsume data from hundreds of embedded devices at once.
         \vspace{1mm} %1mm vertical space
@@ -133,30 +185,11 @@ breaklinks}
         \vspace{1mm} %1mm vertical space
         \BulletItem
         Implemented RSA encryption to validate the privacy and authenticity of sensitive data.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Developed several CUDA applications to accelerate the processing of images.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Written several data parsers to support communication with I$^2$C, CAN, RS422/485, and ethernet connected devices.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Written BASH and Python scripts to automate and supervise the major processing applications.
-        \vspace{1mm} %1mm vertical space
         \BulletItem
         Written several Linux device drivers to support custom hardware. These drivers included I$^2$C, GPIO, and a USB drivers. Also edited the Linux device tree so that these modules could be built into the kernel.
         \vspace{1mm} %1mm vertical space
         \BulletItem
-        Aided in the bring up of custom hardware that included carrier boards for Intel and Nvidia devices. In doing so I gained experience in Altium Designer, using oscilloscopes, logic analyzers, function generators, and DMMs.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Have written several Verilog programs to test time sensitive components of design.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Responsible for the building and tracking of software releases. Aided by git and BASH scripts, I automated source code versioning for team.
-        \vspace{1mm} %1mm vertical space
-        \BulletItem
-        Customized and maintained Buildroot-based Linux distributions for embedded platforms, streamlining system build, kernel configuration, and root filesystem generation for various hardware targets.
+        Contributed to several Verilog FPGA implementations to test time sensitive components of design.
         \vspace{1mm} %1mm vertical space
         \BulletItem
         Used various debuggers including GDB to quickly identify and fix bugs. Leveraged Valgrind to detect memory leaks and performance bottlenecks in C/C++ applications.
@@ -201,6 +234,7 @@ breaklinks}
     \BigGap
 
     \vspace{3mm} %1mm vertical space
+
     %%%%%%%%%%%%%%%
     %% EDUCATION %%
     %%%%%%%%%%%%%%%
@@ -215,7 +249,7 @@ breaklinks}
     College Station, Texas
 
     B.S. in
-    \href{http://www.example.com/my-department}
+    \href{https://engineering.tamu.edu/cse/index.html}
     {Computer Engineering}
     \hfill
     \DatestampYMD{2017}{08}{15}
@@ -244,6 +278,8 @@ breaklinks}
     {PDF:Weblinks}
 
     \href{https://www.linkedin.com/in/timothy-soto-86b8759a/}
-    {https://www.linkedin.com/in/timothy-soto-86b8759a/}
+    {https://www.linkedin.com/in/timothy-soto-86b8759a/} \\
+    \href{https://github.com/timsoto11}
+    {https://github.com/timsoto11}
 \end{Body}
 \end{document}

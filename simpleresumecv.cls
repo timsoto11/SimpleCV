@@ -241,7 +241,7 @@
         {}
         {\setlength\leftmargin{1.0in}%
             \setlength\rightmargin{0.0in}%
-            \setlength\labelwidth{1.0in}%
+            % \setlength\labelwidth{1.0in}%
             \setlength\labelsep{0in}%
             \setlength\listparindent{0in}%
             \setlength\itemindent{0in}%
@@ -250,7 +250,7 @@
             \setlength\parsep{0in}%
             \setlength\itemsep{0.85\baselineskip}%
             \setlength\partopsep{0in}%
-            %\raggedright%
+            % \raggedright%
         }%
         }
         {%
@@ -266,15 +266,17 @@
 
 % Macro: Section (new section for Education, Research Experience, etc.).
 \newcommand{\Section}[3]
-{\par\pdfbookmark[2]{#2}{#3}%
-    \item[\smash{\parbox[t]{1.0in}{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
-    \par}
+{
+    \item[{{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
+          {\hspace*{1mm}\vspace*{1mm}}
+}
 
 % Macro: SubSection.
-\newcommand{\SubSection}[3]
-{\par\pdfbookmark[3]{#2}{#3}%
-    {\UseSubSectionFont\raggedright\MakeUppercase{#1}}%
-    \par}
+\newcommand{\SubSection}[4]
+{%
+{{\UseSubSectionFont\raggedright\MakeUppercase{#1}} - {#2}} \\ %
+{{\textit{#3}}\hfill{#4}}%
+}
 
 % Macro: Detail (text in smaller font under an item).
 \newenvironment{Detail}
