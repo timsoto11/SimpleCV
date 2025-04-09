@@ -31,39 +31,39 @@
 
 % Datestamp format: {yyyy}{MM}{dd} ---> dd MMM yyyy (e.g., 15 Jan 2008).
 \DeclareOption{ddMMMyyyy}{%
-\renewcommand{\DatestampYMD}[3]{\mbox{#3 \ShortMonth{#2} #1}}
-\renewcommand{\DatestampYM}[2]{\mbox{\ShortMonth{#2} #1}}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{\mbox{#3 \ShortMonth{#2} #1}}
+    \renewcommand{\DatestampYM}[2]{\mbox{\ShortMonth{#2} #1}}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 % Datestamp format: {yyyy}{MM}{dd} ---> MMMM yyyy (e.g., January 2008).
 \DeclareOption{MMMMyyyy}{%
-\renewcommand{\DatestampYMD}[3]{\mbox{\LongMonth{#2} #1}}
-\renewcommand{\DatestampYM}[2]{\mbox{\LongMonth{#2} #1}}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{\mbox{\LongMonth{#2} #1}}
+    \renewcommand{\DatestampYM}[2]{\mbox{\LongMonth{#2} #1}}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 % Datestamp format: {yyyy}{MM}{dd} ---> dd MMMM yyyy (e.g., 15 January 2008).
 \DeclareOption{ddMMMMyyyy}{%
-\renewcommand{\DatestampYMD}[3]{\mbox{#3 \LongMonth{#2} #1}}
-\renewcommand{\DatestampYM}[2]{\mbox{\LongMonth{#2} #1}}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{\mbox{#3 \LongMonth{#2} #1}}
+    \renewcommand{\DatestampYM}[2]{\mbox{\LongMonth{#2} #1}}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 % Datestamp format: {yyyy}{MM}{dd} ---> yyyy-MM-dd (e.g., 2008-01-15).
 \DeclareOption{yyyyMMdd}{%
-\renewcommand{\DatestampYMD}[3]{\mbox{#1-#2-#3}}
-\renewcommand{\DatestampYM}[2]{\mbox{#1-#2}}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{\mbox{#1-#2-#3}}
+    \renewcommand{\DatestampYM}[2]{\mbox{#1-#2}}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 % Datestamp format: {yyyy}{MM}{dd} ---> yyyy-MM (e.g., 2008-01).
 \DeclareOption{yyyyMM}{%
-\renewcommand{\DatestampYMD}[3]{\mbox{#1-#2}}
-\renewcommand{\DatestampYM}[2]{\mbox{#1-#2}}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{\mbox{#1-#2}}
+    \renewcommand{\DatestampYM}[2]{\mbox{#1-#2}}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 % Datestamp format: {yyyy}{MM}{dd} ---> yyyy (e.g., 2008).
 \DeclareOption{yyyy}{%
-\renewcommand{\DatestampYMD}[3]{#1}
-\renewcommand{\DatestampYM}[2]{#1}
-\renewcommand{\DatestampY}[1]{#1}}
+    \renewcommand{\DatestampYMD}[3]{#1}
+    \renewcommand{\DatestampYM}[2]{#1}
+    \renewcommand{\DatestampY}[1]{#1}}
 
 \ProcessOptions\relax
 
@@ -72,12 +72,12 @@
 
 % Geometry package for page margins.
 \RequirePackage[
-left=0.50in,
-right=0.50in,
-top=0.50in,
-bottom=0.50in,
-nohead,
-includefoot]{geometry}
+    left=0.50in,
+    right=0.50in,
+    top=0.50in,
+    bottom=0.50in,
+    nohead,
+    includefoot]{geometry}
 
 % PDF settings and properties.
 \RequirePackage{hyperref}
@@ -98,35 +98,35 @@ includefoot]{geometry}
 
 % Abbreviations for months.
 \newcommand{\LongMonth}[1]{%
-\ifcase#1\relax
-\or January%
-\or February%
-\or March%
-\or April%
-\or May%
-\or June%
-\or July%
-\or August%
-\or September%
-\or October%
-\or November%
-\or December%
-\fi}
+    \ifcase#1\relax
+    \or January%
+    \or February%
+    \or March%
+    \or April%
+    \or May%
+    \or June%
+    \or July%
+    \or August%
+    \or September%
+    \or October%
+    \or November%
+    \or December%
+    \fi}
 \newcommand{\ShortMonth}[1]{%
-\ifcase#1\relax
-\or Jan%
-\or Feb%
-\or Mar%
-\or Apr%
-\or May%
-\or Jun%
-\or Jul%
-\or Aug%
-\or Sep%
-\or Oct%
-\or Nov%
-\or Dec%
-\fi}
+    \ifcase#1\relax
+    \or Jan%
+    \or Feb%
+    \or Mar%
+    \or Apr%
+    \or May%
+    \or Jun%
+    \or Jul%
+    \or Aug%
+    \or Sep%
+    \or Oct%
+    \or Nov%
+    \or Dec%
+    \fi}
 
 % XeLaTeX packages.
 \RequirePackage{fontspec}
@@ -140,9 +140,9 @@ includefoot]{geometry}
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
 \setmainfont
 [Path=./Fonts/Tinos/,
-ItalicFont=Tinos-Italic,
-BoldFont=Tinos-Bold,
-BoldItalicFont=Tinos-BoldItalic]
+    ItalicFont=Tinos-Italic,
+    BoldFont=Tinos-Bold,
+    BoldItalicFont=Tinos-BoldItalic]
 {Tinos-Regular.ttf}
 
 % Secondary font: "GNU FreeFont".
@@ -150,11 +150,11 @@ BoldItalicFont=Tinos-BoldItalic]
 % GNU General Public License Version 3, and can be downloaded
 % for free at <https://savannah.gnu.org/projects/freefont/>.
 \newcommand{\UseSecondaryFont}{\fontspec
-[Path=./Fonts/GNUFreeFont/,
-ItalicFont=FreeSerifItalic,
-BoldFont=FreeSerifBold,
-BoldItalicFont=FreeSerifBoldItalic]
-{FreeSerif.otf}}
+    [Path=./Fonts/GNUFreeFont/,
+        ItalicFont=FreeSerifItalic,
+        BoldFont=FreeSerifBold,
+        BoldItalicFont=FreeSerifBoldItalic]
+    {FreeSerif.otf}}
 
 % Sans-serif font: Changed to "Tinos".
 \renewcommand{\sffamily}{\rmfamily}
@@ -187,20 +187,20 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\DraftStamp}{{\UseHeaderFooterFont\color{red}DRAFT~\Timestamp}}
 
 \ifnum\TypesetInDraftMode=0
-\newcommand{\HeaderText}{}
-\newcommand{\FooterText}{\hfill\PageKOfN\hfill}
+    \newcommand{\HeaderText}{}
+    \newcommand{\FooterText}{\hfill\PageKOfN\hfill}
 \else
-\newcommand{\HeaderText}{}
-\newcommand{\FooterText}{\null\hphantom{\DraftStamp}\hfill%
-\PageKOfN\hfill%
-\DraftStamp\null}
+    \newcommand{\HeaderText}{}
+    \newcommand{\FooterText}{\null\hphantom{\DraftStamp}\hfill%
+        \PageKOfN\hfill%
+        \DraftStamp\null}
 \fi
 
 \def\ps@plain{%
-\def\@oddhead{\HeaderText}%
-\def\@evenhead{\HeaderText}%
-\def\@oddfoot{\FooterText}%
-\def\@evenfoot{\FooterText}}
+    \def\@oddhead{\HeaderText}%
+    \def\@evenhead{\HeaderText}%
+    \def\@oddfoot{\FooterText}%
+    \def\@evenfoot{\FooterText}}
 
 \pagestyle{plain}
 
@@ -221,41 +221,41 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Macro: Title (name).
 \newcommand{\Title}[1]{%
-\par\pdfbookmark[1]{#1}{#1}%
-\begingroup\centering%
-\UseTitleFont{#1}%
-\par\endgroup\par}
+    \par\pdfbookmark[1]{#1}{#1}%
+    \begingroup\centering%
+    \UseTitleFont{#1}%
+    \par\endgroup\par}
 
 % Macro: SubTitle (personal information below name).
 \newenvironment{SubTitle}
 {\par\vspace{0.25\baselineskip}%
-\begingroup\centering%
-\UseSubTitleFont}
+    \begingroup\centering%
+    \UseSubTitleFont}
 {\par\endgroup\par}
 
 % Macro: Body (rest of the document).
 \newenvironment{Body}
 {%
-\par\vspace{1.5\baselineskip}%
-\begin{list}
-{}
-{\setlength\leftmargin{1.0in}%
-\setlength\rightmargin{0.0in}%
-\setlength\labelwidth{1.0in}%
-\setlength\labelsep{0in}%
-\setlength\listparindent{0in}%
-\setlength\itemindent{0in}%
-\setlength\parskip{0in}%
-\setlength\topsep{0in}%
-\setlength\parsep{0in}%
-\setlength\itemsep{0.85\baselineskip}%
-\setlength\partopsep{0in}%
-%\raggedright%
-}%
-}
-{%
-\end{list}%
-\par%
+    \par\vspace{1.5\baselineskip}%
+    \begin{list}
+        {}
+        {\setlength\leftmargin{1.0in}%
+            \setlength\rightmargin{0.0in}%
+            \setlength\labelwidth{1.0in}%
+            \setlength\labelsep{0in}%
+            \setlength\listparindent{0in}%
+            \setlength\itemindent{0in}%
+            \setlength\parskip{0in}%
+            \setlength\topsep{0in}%
+            \setlength\parsep{0in}%
+            \setlength\itemsep{0.85\baselineskip}%
+            \setlength\partopsep{0in}%
+            %\raggedright%
+        }%
+        }
+        {%
+    \end{list}%
+    \par%
 }
 
 % Macro: Gap (vertical gap between items in the same section).
@@ -267,14 +267,14 @@ BoldItalicFont=FreeSerifBoldItalic]
 % Macro: Section (new section for Education, Research Experience, etc.).
 \newcommand{\Section}[3]
 {\par\pdfbookmark[2]{#2}{#3}%
-\item[\smash{\parbox[t]{1.0in}{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
-\par}
+    \item[\smash{\parbox[t]{1.0in}{\UseSectionFont\raggedright\MakeUppercase{#1}}}]%
+    \par}
 
 % Macro: SubSection.
 \newcommand{\SubSection}[3]
 {\par\pdfbookmark[3]{#2}{#3}%
-{\UseSubSectionFont\raggedright\MakeUppercase{#1}}%
-\par}
+    {\UseSubSectionFont\raggedright\MakeUppercase{#1}}%
+    \par}
 
 % Macro: Detail (text in smaller font under an item).
 \newenvironment{Detail}
@@ -287,14 +287,14 @@ BoldItalicFont=FreeSerifBoldItalic]
 %
 \newcommand{\BulletItem}
 {\par%
-\savebox{\BulletItemIndentBox}{
-\BulletSymbol\hspace{1.5mm}}%
-\settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
-\parshape 2%
-\labelwidth \linewidth%
-\dimexpr\labelwidth+\BulletItemIndentWidth\relax \dimexpr\linewidth-\BulletItemIndentWidth\relax%
-\usebox{\BulletItemIndentBox}%
-\ignorespaces%
+    \savebox{\BulletItemIndentBox}{
+        \BulletSymbol\hspace{1.5mm}}%
+    \settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
+    \parshape 2%
+    \labelwidth \linewidth%
+    \dimexpr\labelwidth+\BulletItemIndentWidth\relax \dimexpr\linewidth-\BulletItemIndentWidth\relax%
+    \usebox{\BulletItemIndentBox}%
+    \ignorespaces%
 }
 
 % Macro: SubBulletItem.
@@ -303,45 +303,45 @@ BoldItalicFont=FreeSerifBoldItalic]
 %
 \newcommand{\SubBulletItem}
 {\par\vspace{0\baselineskip}%
-\savebox{\SubBulletItemIndentBox}{\hspace{5.6mm}\SubBulletSymbol\hspace{1.5mm}}%
-\settowidth{\SubBulletItemIndentWidth}{\usebox{\SubBulletItemIndentBox}}%
-\parshape 2%
-\labelwidth \linewidth%
-\dimexpr\labelwidth+\SubBulletItemIndentWidth\relax \dimexpr\linewidth-\SubBulletItemIndentWidth\relax%
-\usebox{\SubBulletItemIndentBox}%
-\ignorespaces%
+    \savebox{\SubBulletItemIndentBox}{\hspace{5.6mm}\SubBulletSymbol\hspace{1.5mm}}%
+    \settowidth{\SubBulletItemIndentWidth}{\usebox{\SubBulletItemIndentBox}}%
+    \parshape 2%
+    \labelwidth \linewidth%
+    \dimexpr\labelwidth+\SubBulletItemIndentWidth\relax \dimexpr\linewidth-\SubBulletItemIndentWidth\relax%
+    \usebox{\SubBulletItemIndentBox}%
+    \ignorespaces%
 }
 
 % Macro: Entry.
 \newcommand{\Entry}
 {\par\vspace{0\baselineskip}%
-\parshape 1%
-\labelwidth \linewidth%
-\ignorespaces%
+    \parshape 1%
+    \labelwidth \linewidth%
+    \ignorespaces%
 }
 
 % Macro: Item (aligns horizontally with BulletItem).
 \newcommand{\Item}
 {\par\vspace{0\baselineskip}%
-\savebox{\BulletItemIndentBox}{\hphantom{\hspace{5.6mm}\BulletSymbol\hspace{1.5mm}}}%
-\settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
-\parshape 2%
-\labelwidth \linewidth%
-\dimexpr\labelwidth+\BulletItemIndentWidth\relax \dimexpr\linewidth-\BulletItemIndentWidth\relax%
-\usebox{\BulletItemIndentBox}%
-\ignorespaces%
+    \savebox{\BulletItemIndentBox}{\hphantom{\hspace{5.6mm}\BulletSymbol\hspace{1.5mm}}}%
+    \settowidth{\BulletItemIndentWidth}{\usebox{\BulletItemIndentBox}}%
+    \parshape 2%
+    \labelwidth \linewidth%
+    \dimexpr\labelwidth+\BulletItemIndentWidth\relax \dimexpr\linewidth-\BulletItemIndentWidth\relax%
+    \usebox{\BulletItemIndentBox}%
+    \ignorespaces%
 }
 
 % Macro: SubItem (aligns horizontally with SubBulletItem).
 \newcommand{\SubItem}
 {\par\vspace{0\baselineskip}%
-\savebox{\SubBulletItemIndentBox}{\hphantom{\hspace{1.5mm}\SubBulletSymbol\hspace{1.5mm}}}%
-\settowidth{\SubBulletItemIndentWidth}{\usebox{\SubBulletItemIndentBox}}%
-\parshape 2%
-\labelwidth \linewidth%
-\dimexpr\labelwidth+\SubBulletItemIndentWidth\relax \dimexpr\linewidth-\SubBulletItemIndentWidth\relax%
-\usebox{\SubBulletItemIndentBox}%
-\ignorespaces%
+    \savebox{\SubBulletItemIndentBox}{\hphantom{\hspace{1.5mm}\SubBulletSymbol\hspace{1.5mm}}}%
+    \settowidth{\SubBulletItemIndentWidth}{\usebox{\SubBulletItemIndentBox}}%
+    \parshape 2%
+    \labelwidth \linewidth%
+    \dimexpr\labelwidth+\SubBulletItemIndentWidth\relax \dimexpr\linewidth-\SubBulletItemIndentWidth\relax%
+    \usebox{\SubBulletItemIndentBox}%
+    \ignorespaces%
 }
 
 % Macro: NumberedItem.
@@ -354,16 +354,16 @@ BoldItalicFont=FreeSerifBoldItalic]
 %
 \newcommand{\NumberedItem}[1]
 {\par\vspace{0\baselineskip}%
-\savebox{\MaxNumberedItemIndentBox}{\hspace{1.5mm}{\MaxNumberedItem}\hspace{2.5mm}}%
-\settowidth{\MaxNumberedItemIndentWidth}{\usebox{\MaxNumberedItemIndentBox}}%
-\savebox{\NumberedItemIndentBox}{\hspace{1.5mm}{#1}\hspace{2.5mm}}%
-\settowidth{\NumberedItemIndentWidth}{\usebox{\NumberedItemIndentBox}}%
-\parshape 2%
-\labelwidth \linewidth%
-\dimexpr\labelwidth+\MaxNumberedItemIndentWidth\relax \dimexpr\linewidth-\MaxNumberedItemIndentWidth\relax%
-\hspace{\dimexpr\MaxNumberedItemIndentWidth-\NumberedItemIndentWidth\relax}%
-\usebox{\NumberedItemIndentBox}%
-\ignorespaces%
+    \savebox{\MaxNumberedItemIndentBox}{\hspace{1.5mm}{\MaxNumberedItem}\hspace{2.5mm}}%
+    \settowidth{\MaxNumberedItemIndentWidth}{\usebox{\MaxNumberedItemIndentBox}}%
+    \savebox{\NumberedItemIndentBox}{\hspace{1.5mm}{#1}\hspace{2.5mm}}%
+    \settowidth{\NumberedItemIndentWidth}{\usebox{\NumberedItemIndentBox}}%
+    \parshape 2%
+    \labelwidth \linewidth%
+    \dimexpr\labelwidth+\MaxNumberedItemIndentWidth\relax \dimexpr\linewidth-\MaxNumberedItemIndentWidth\relax%
+    \hspace{\dimexpr\MaxNumberedItemIndentWidth-\NumberedItemIndentWidth\relax}%
+    \usebox{\NumberedItemIndentBox}%
+    \ignorespaces%
 }
 
 % Macro: Hide.
